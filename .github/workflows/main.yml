@@ -8,5 +8,4 @@ jobs:
       - run: pwd
       - uses: actions/setup-node@v4 
         run: node -v
-      - uses: actions/setup-node@v4
-        run: npm -v
+      - run: npm -v

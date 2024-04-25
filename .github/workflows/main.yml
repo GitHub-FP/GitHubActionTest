@@ -2,7 +2,7 @@ name: main
 on:
   workflow_dispatch
 jobs:
-  example-job:
+  buildUmi:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
@@ -27,3 +27,7 @@ jobs:
             dist
             !dist/**/*.md
             !dist/index.html
+  console:
+   runs-on: ubuntu-lastest
+   steps:
+    - run: echo 'hello world'

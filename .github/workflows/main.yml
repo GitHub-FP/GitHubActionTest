@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
+      - uses: actions/checkout@v4
+      - run: ls
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
